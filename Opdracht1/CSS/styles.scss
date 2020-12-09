@@ -1,9 +1,11 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
 }
 
-body{
+body
+{
     background-color: #c3cfe2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
@@ -14,30 +16,35 @@ body{
     border-radius: 15px;
 }
 
-.container{
+.container
+{
     display: flex;
     flex-direction: column;
     flex: 1;   
 }
 
-.main{
+.main
+{
     padding: 20px;
     border-radius: 15px 15px 0 0;
     background-color: #ffffff;
     padding: 30px;
 
-    & p{
+    &__p
+    {
         margin-bottom: 50px;
     }
 }
 
-.image{
+.image
+{
     background-color: white;
     text-align: center;
     
 }
 
-.footer{
+.footer
+{
     align-items: center;
     background-color: #686de0;
     text-align: center;
@@ -45,7 +52,8 @@ body{
     width: 400px;
     padding-bottom: 50px;
 
-    & img{
+    &__img
+    {
         width: 125px;
         height: 125px;
         border: 8px solid white;
@@ -53,14 +61,16 @@ body{
         margin: -50px;
     }
 
-    & h1{
+    &__h1
+    {
         margin-top: 60px;
         color:#ffffff;
         font-size: 20px;
         font-weight: 600;
     }
 
-    & p{
+    &__p
+    {
         color:#9193e0;
         font-size: 15px;
         font-weight: bold;
