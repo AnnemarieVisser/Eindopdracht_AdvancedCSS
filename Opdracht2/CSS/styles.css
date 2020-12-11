@@ -16,7 +16,7 @@ body {
   background-color: #c3cfe2;
 }
 
-.person1 {
+.container__person1 {
   background-color: #4f4f4f;
   max-width: 300px;
   height: 350px;
@@ -24,7 +24,7 @@ body {
   border-radius: 15px;
 }
 
-.button {
+.container__person1--button {
   display: inline-block;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
@@ -37,7 +37,7 @@ body {
   width: 150px;
 }
 
-.image {
+.container__person1--image {
   width: 300px;
   -webkit-box-shadow: 0 0 5px #000;
           box-shadow: 0 0 5px #000;
@@ -45,13 +45,13 @@ body {
   border-radius: 15px;
 }
 
-.person1:hover > .image {
+.container__person1:hover > .container__person1--image {
   opacity: 0;
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
 }
 
-.image:hover + .button, .button:hover {
+.container__person1--image:hover + .container__person1--button, .container__person1--button:hover {
   display: inline-block;
   opacity: 1.0;
   -webkit-transition: opacity 250ms ease-in;
@@ -78,16 +78,6 @@ body {
 
 @media (min-width: 960px) {
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: auto;
     width: auto;
     max-width: 960px;
   }
